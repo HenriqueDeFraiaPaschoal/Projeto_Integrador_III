@@ -1,20 +1,24 @@
-// This is your Prisma schema file,
+This is your Prisma schema file,
 // learn more about it in the docs: https://pris.ly/d/prisma-schema
 
 model Usuario {
-  id      Int      @id @default(autoincrement())
-  usuario   String   @unique
-  comentarios
-  dataPublicacao
-  classificacao
-  publicacao
-  nome    String
+  id      ObjectId      @id @map("_id") @test.Ignore // Mapeando o campo da chave primária, pois o Prisma não aceita a sintaxe "_id" do MongoDB
+  historico ObjectId[] @test.Ignore // Estes @test.Ignore estão dizendo que o Prisma não irá gerenciar os campos que são específicos do MongoDB
+  nome String
+  sobrenome String
+  email   String   @unique
+  senha String
+  steak Int
+  streakDate String
 }
 
 model Post {
   id        Int      @id @default(autoincrement())
-  historico     String
-  content   String?
+  usuario: Usuario[]
+  comentarios: ObjectId[]
+  dataPublicacao: DateTime
+  publicação: String
+  classificação String
   author    User     @relation(fields: [authorId], references: [id])
   authorId  Int
 }
