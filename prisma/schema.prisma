@@ -1,0 +1,20 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+model Usuario {
+  id      Int      @id @default(autoincrement())
+  usuario   String   @unique
+  comentarios
+  dataPublicacao
+  classificacao
+  publicacao
+  nome    String
+}
+
+model Post {
+  id        Int      @id @default(autoincrement())
+  historico     String
+  content   String?
+  author    User     @relation(fields: [authorId], references: [id])
+  authorId  Int
+}
