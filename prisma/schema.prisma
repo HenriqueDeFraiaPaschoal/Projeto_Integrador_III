@@ -10,15 +10,14 @@ model Usuario {
   senha String
   steak Int
   streakDate String
+  posts Post[]  // Definindo o relacionamento "um para muitos" com Post
 }
 
 model Post {
-  id        Int      @id @default(autoincrement())
-  usuario: Usuario[]
-  comentarios: ObjectId[]
-  dataPublicacao: DateTime
-  publicação: String
-  classificação String
-  author    User     @relation(fields: [authorId], references: [id])
-  authorId  Int
+  id              ObjectId      @id @map("_id") @test.Ignore 
+  usuario         ObjectId[]    @relation("posts") @test.Ignore  // Não estou tão certo quanto a utilização dessa anotação (@test.Ignore). Tenho que verificar com o Professor Fausto.
+  comentarios     ObjectId[]
+  dataPublicacao  DateTime
+  publicacao      String
+  classificacao   String
 }
