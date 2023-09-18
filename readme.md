@@ -1,10 +1,10 @@
-# Projeto Integrador (P.I.) de Desenvolvimento de Sistema de Compartilhamento e Avaliação de Código :technologist:
+# Projeto Integrador (P.I.):technologist:
 Este é o readme do terceiro **Projeto integrador** desenvolvido para conclusão do terceiro semestre do **curso de Desenvolvimento de Software Multiplataforma**[DSM](https://site.fatecfranca.edu.br/cursos/dsm) da [Fatec](https://site.fatecfranca.edu.br/).  
 Este projeto possui tema livre para os alunos seguindo os seguintes **requisitos**:
-- **Front-End** (Pagina WEB com uso de next)
-- **B.D. Não Relacional com MongoDB**
+- **Front-End** (Pagina WEB com uso de React)
+- **Banco de Dados (B.D.) Não Relacional com MongoDB**
 - **Gestão ágil(Kanban, Scrum e documentações)**
-- **IHC focado em relatório**
+- **Foco em Interação Humano Computador (IHC)**
 
 O projeto será desenvolvido por uma equipe de **5 integrantes** com os seguintes papéis:
 - **1 Scrum Master** *(Scrum Master - S.M.)*
@@ -17,15 +17,64 @@ O projeto será desenvolvido por uma equipe de **5 integrantes** com os seguinte
 <details>
 <summary>
 
-## Tema
+## Tema - Desenvolvimento de Sistema de Compartilhamento e Avaliação de Código [CodeReviewer]
 Plataforma de Compartilhamento de Conhecimento com Avaliação Colaborativa em uma Instituição de Ensino
 
 </summary>
 
-O tema decidido pelo grupo foi uma plataforma de compartilhamento de conhecimento com avaliação colaborativa na área de programação, visando um serviço onde estudantes podem subir seu código para o sistema e ser avaliado por outros estudantes. Esta plataforma segue um sistema gamificado para estimular o estudo através da leitura de códigos desenvolvidos por seus colegas.
-Foram definidos os seguintes aspectos do projeto pela equipe:
-Seguindo a ideologia de um aprendizado colaborativo e constante, será desenvolvido um projeto para facilitar o compartilhamento e avaliação de código, para uma escola de programação com caracteristicas de gamificação. O sistema permitirá a criação de contas, publicação de códigos, acompanhamento de frequência e avaliação de códigos inter-alunos. 
+O tema decidido pelo grupo foi o compartilhamento de conhecimento com avaliação colaborativa na área de programação, visando um serviço onde estudantes podem subir seu código para o sistema e ser avaliado por outrosBack-endnvolvido um projeto para facilitar o compartilhamento e avaliação de código, para uma escola de programação com caracteristicas de gamificação. O sistema permitirá a criação de contas, publicação de códigos, acompanhamento de frequência e avaliação de códigos inter-alunos. 
 </details>
+
+## Briefing
+1. Qual a área que o problema foi identificado?
+2. Qual problema a ser resolvido com a solução digital? Contextualização
+3. Quem são os atores envolvidos no problema?
+4. Quais os processos que são realizados e que não tem sido adequadamente realizados? Onde uma solução digital pode ser uma ferramente de valor para os usuários.
+5. Quais os resultados esperados com o uso da ferramenta proposta? Como se pode medir o sucesso da solução?
+
+//começo
+
+A área da educação tem passado por profundas transformações nas últimas décadas, impulsionadas pelo avanço da tecnologia digital. No entanto, um problema persistente que tem sido identificado nesse cenário é a dificuldade de engajar alunos no aprendizado de programação, uma habilidade cada vez mais essencial no mundo moderno. Neste contexto, surge a necessidade de uma solução digital inovadora que aborde esse desafio de forma eficaz.
+
+Um problema identificado reside na falta de engajamento e interação entre alunos no aprendizado de programação. A programação é uma disciplina complexa, muitas vezes solitária, e os estudantes podem sentir-se desmotivados e isolados ao enfrentar desafios técnicos. Além disso, a revisão e avaliação dos códigos dos colegas são componentes cruciais na aprendizagem, mas muitas vezes são negligenciados nas abordagens tradicionais.
+
+A solução digital proposta é um aplicativo de ensino de programação gamificado, com semelhança a uma rede social, onde os alunos podem subir seus códigos e revisar os códigos de outros alunos, classificando e comentando sobre o código deles. Esta plataforma visa abordar o problema de engajamento e isolamento no aprendizado de programação, criando um ambiente colaborativo e interativo que estimula a participação ativa dos estudantes.
+
+
+Os principais atores envolvidos no problema são:
+
+Estudantes: Os principais beneficiários da solução, que desejam aprender programação de forma mais envolvente e interativa.
+Professores: Educadores que desejam fornecer uma experiência de ensino mais eficaz e motivadora para seus alunos.
+
+
+Os processos a serem aprimorados incluem:
+
+Engajamento dos alunos: A plataforma oferece desafios gamificados que incentivam a prática constante e a competição saudável.
+Aprendizado colaborativo: Os alunos podem revisar e comentar os códigos uns dos outros, promovendo a colaboração e a troca de conhecimento.
+Avaliação de código: A classificação e comentários ajudam a identificar áreas de melhoria no código, tornando a avaliação mais precisa e construtiva.
+Monitoramento do progresso: Os professores podem acompanhar o desempenho dos alunos de forma mais eficaz, identificando áreas de dificuldade.
+
+
+Os resultados esperados com o uso da ferramenta proposta são:
+
+Maior engajamento dos alunos no aprendizado de programação.
+Melhoria na qualidade dos códigos produzidos.
+Aumento da interação e colaboração entre os estudantes.
+Maior satisfação dos professores com o processo de ensino.
+
+
+O sucesso da solução pode ser medido por meio de indicadores como:
+
+Taxa de participação dos alunos.
+Qualidade das revisões e comentários feitos pelos alunos.
+Melhoria nas notas e no desempenho dos estudantes.
+Feedback positivo dos professores e alunos.
+
+//Fim
+
+
+
+
 
 ## Objetivos e resultados esperados
 O projeto possui como objetivo criar um sistema que possa contribuir com o aprendizado de programação pelo público mais jovem, aproveitando a socialização via web pelos alunos. Isto é, fornecerá a possibilidade de alunos da mesma sala avaliarem os códigos de outros, e terem seus códigos avaliados por seus colegas.
@@ -38,61 +87,7 @@ Também **pode ajudar na interação social entre os alunos** os quais terão al
 ## Justificativa
 Durante a pandemia de 2020, muitos trabalhos sofreram drásticas mudanças em suas rotinas. Muitos se tornaram home office, e a necessidade de profissionais capazes de ler e interpretar códigos e fazer uma devolutiva de maneira clara e sucinta se tornou maior. Logo é necessário que desde cedo seja treinado esse tipo de processo digital para os futuros profissionais da área.
 
-## Metodologia
-1. Definir o Escopo e os Objetivos:
 
-Identificar a área ou tópico de tecnologia que será o foco do projeto.
-Estabelecer objetivos claros e mensuráveis para o projeto. O que esperamos alcançar?
-
-2. Pesquisa Inicial:
-
-Realizar uma pesquisa inicial para entender o contexto e as necessidades relacionadas ao projeto.
-Identificar as tecnologias existentes que podem ser relevantes para o projeto.
-
-3. Estabelecer um Plano de Projeto:
-
-Criar um cronograma detalhado que inclua marcos e prazos para o projeto.
-Alocar recursos como tempo onde mais necessário.
-
-4. Dividir as Tarefas:
-
-Atribuir tarefas específicas para cada membro da equipe com base em suas habilidades e conhecimentos.
-Garantir que as responsabilidades estejam claramente definidas.
-
-5. Desenvolvimento e Colaboração:
-
-Iniciar o desenvolvimento do projeto de acordo com o plano estabelecido.
-Mantendo comunicação regular entre os membros da equipe para garantir a colaboração eficaz.
-
-6. Avaliação e Feedback Contínuos:
-
-Implementar sistemas de avaliação regulares para medir o progresso do projeto.
-Coletar feedback dos membros da equipe e de potenciais usuários ou interessados, como professores e alunos.
-
-7. Integração Interdisciplinar:
-
-Garantir que a colaboração entre as diferentes disciplinas seja constante e produtiva.
-Resolver quaisquer conflitos ou desafios que surjam devido a abordagens disciplinares diferentes.
-
-8. Testes e Ajustes:
-
-Realizar testes rigorosos do projeto à medida que ele se desenvolve e fazer ajustes conforme necessário.
-Certificar-se de que o projeto atende aos objetivos estabelecidos.
-
-9. Apresentação e Documentação:
-- Preparar uma apresentação final do projeto que destaque as realizações e aprendizados.
-- Documentar todo o processo, desde a concepção até a conclusão, incluindo relatórios técnicos e documentação do código.
-
-10. Avaliação e Reflexão:
-- Avaliar o projeto com base nos objetivos iniciais e na satisfação do cliente.
-- Realizar uma reflexão sobre o que funcionou bem e quais áreas podem ser melhoradas em projetos futuros.
-
-
-## Recursos
-Físicos: Será necessário o uso de computadores para o uso dos softwares necessários para executar a modelagem e prototipação, como também a codificação do projeto, estes recursos podem ser acessados tanto pela FATEC que disponibiliza esses recursos como o uso de recursos pessoais. Além disto, será necessário acesso aos livros de referência do curso para melhor interpretar e desenvolver o que/como deve ser feito.
-
-Digitais: Será necessário o uso de vários softwares para o desenvolvimento do projeto, variando desde navegadores para pesquisas, até IDE's para a codificação. O uso dos softwares pode variar tanto de indivíduo para indivíduo quanto de empresa para empresa, e neste grupo foi determinado que os integrantes possuem total liberdade de escolha entre os variados softwares disponíveis, se resgardando à softwares de uso gratuito.
-Alguns recomendados: Navegador Chrome, Prototipação Figma, Kanbam Trello, Versionador Github, Pacote Office.
 
 <details>
 <summary>
@@ -209,125 +204,20 @@ Para executar este projeto os seguintes passos devem ser seguidos:
   ~~~
   cd pasta
   ~~~
-</details>
 
-<details>
-<summary>
-
-## Padrões :octocat:
-</summary>
-Aqui será documentado os padrões à serem seguidos para minimizar falhas de comunicação ou confusão por situações em que, a diferença de padrões/costumes entre os integrantes, possa causar inconveniências.
-
-### Git e GitHub
-Como de manhã temos bom dia, à tarde temos boa tarde e a noite temos boa noite.  
-Antes de iniciar o trabalho temos **git pull**, durante o trabalho temos **git status**, **git add** e **git commit**, e no final do trabalho **git push**
-
-Apesar de alguns comandos seguirem estruturas simplistas, o comando de commit deverá seguir o seguinte padrão:
-
-`git commit -m "<tipo>[resumo]:descrição"`
-
-Onde os tipos para o escopo deste projeto:
-- **FIX**: Utilizado caso seja consertado/modificado código de outro ou de uma função já implementada
-- **FEAT**: Ao adicionar/iniciar a introdução de um novo recurso
-- **CHORE**: Commit em um mesmo recurso em progresso
-- **STYLE**: Ao ajustar o código apenas visualmente sem alteração sua lógica
-- **DOCS**: Ajuste ou adição de documentos que não fazem parte do programa mas detalham/explicam o projeto
-- **REFACTOR**: Caso seja iniciado a refatoração de algum recurso, apenas utilizado após termino do p.i. 
-
-Os tipos, resumo e descrição, **DEVEM** ser feitas em inglês :us:, mantendo um padrão internacional
-
-Dito isto:
   ~~~
-  git pull
+  npm install
   ~~~
+
   ~~~
-  git git status
+  npm start
   ~~~
-  ~~~
-  git add .
-  ~~~
-  ~~~
-  git commit -m "<tipo>[resumo]: descrição"
-  ~~~
-</details>
-
-<details>
-<summary>
-
-## Histórias de usuário e requisitos
-</summary>
-
-### Histórias
-Como um **[papel]** eu quero **[função/ação]** para que **[objetivo/benefício]**  
-Dado **[condição x]**, quando **[acontecer evento]**, espero **[resultado]**
-
-**HU 01** - Como um **estudante** eu quero poder **avaliar o código dos meus colegas** para que eu possa **aprender e ajudar junto à eles**
-
-**HU 02** - Como **estudante** eu quero poder **saber a opnião de meus colegas sobre meu código** para que eu possa **melhorar minhas habilidades e minha noção na programação**
-
-**HU 03** - Como **professor** eu quero poder **saber o quanto cada aluno tem se ajudado** para que eu possa **analisar a interação entre os estudantes**
-
-**HU 04** - Como **professor** eu quero poder **saber a frequência com que os alunos estão se ajudando** para que eu possa **analisar o ânimo da turma**
-
-</details>
-
-<details>
-<summary>
-
-## Cronograma :hourglass:
-</summary>
-
-### Etapas Gerênciais
-- [X] Definir integrantes
-- [X] Criação grupo whats
-- [X] Definir problema/solução
-- [X] Definir cargos
-- [ ] Criar repositório remoto (Será criado pelo prof. e adicionado os integrantes)
-
-## Etapas de produção 
-Semana 1 07-13/08/2023
-- [ ] Produção do PITCH (3-4min)
-- [ ] Alinhamento de tecnologias
-- [ ] Reunião de alinhamento de produção
-
-Semana 2 14-20/08/2023
-
-- [ ] Proposta de Projeto Integrado (Gestão Ágil)
-- [ ] Criação das tasks trello
-- [ ] Verificar requisitos com professores
-- [ ] [CANVAS](./canvas.pdf)
-
-- [ ] Desenvolvimento front-end
-- [ ] Desenvolvimento back-end
-- [ ] Desenvolvimento B.D.
-
-Semana 3 21-27/08/2023
-- [ ] PITCHs finais (3-4min)(um com código, um com funcionalidades)
-- [ ] Hospedagem no github
-- [ ] Portifólio no behance
-- [ ] Vídeo no Youtube
-
-Semana 4 28/08-03/09/2023
-- [ ] PITCHs finais (3-4min)(um com código, um com funcionalidades)
-- [ ] Hospedagem no github
-- [ ] Portifólio no behance
-- [ ] Vídeo no Youtube
-
-Semana 5 03-10/09/2023
-- [ ] PITCHs finais (3-4min)(um com código, um com funcionalidades)
-- [ ] Hospedagem no github
-- [ ] Portifólio no behance
-- [ ] Vídeo no Youtube
-
-### Sprints
-1. 02/09 WireFrame (Low-fi à Hi-fi)
-2. 30/09 1ª Documentação
-3. 21/10 2ª Documentação + API + FRONT + Banco
-4. 11/11 Entrega Final
 </details>
 
 ## Links Úteis :link:
-
+[Jira]()  
+[Figma]()  
+[Site]()  
 
 #### Tecnologias
 nome completo professor:

@@ -1,7 +1,7 @@
 # Banco de Dados Não-Relacional
 
 No P.I deste semestre, teremos de usar um banco de dados não-relacional para o back-end de nossa aplicação. 
-Como neste semestre temos a ideia de fazer um fórum de compartilhamento de código, onde as pessoas podem se ajudar e aprender mutuamente, é de extrema valia a alta escabilidade que essa modalidade de gerenciamento de banco de dados pode proporcionar, visto que é de se esperar que um fórum tenha cadastrado muitos usuários.
+Como neste semestre temos a ideia de fazer um fórum de compartilhamento de código, onde as pessoas podem se ajudar e aprender mutuamente, é de extrema valia a alta escalabilidade que essa modalidade de gerenciamento de banco de dados pode proporcionar, visto que é de se esperar que um fórum tenha cadastrado muitos usuários.
 
 # MongoDB
 
