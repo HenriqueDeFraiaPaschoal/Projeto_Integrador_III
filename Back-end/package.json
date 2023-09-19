@@ -1,19 +1,23 @@
 {
-  "name": "projeto_integrador_iii",
-  "version": "1.0.0",
-  "description": "Este é o readme do terceiro **Projeto integrador** desenvolvido para conclusão do terceiro semestre do **curso de Desenvolvimento de Software Multiplataforma**[DSM](https://site.fatecfranca.edu.br/cursos/dsm) da [Fatec](https://site.fatecfranca.edu.br/).   Este projeto possui tema livre para os alunos seguindo os seguintes **requisitos**: - **Front-End** (Pagina WEB com uso de next) - **B.D. Não Relacional com MongoDB** - **Gestão ágil(Kanban, Scrum e documentações)** - **IHC focado em relatório**",
-  "main": "index.js",
-  "directories": {
-    "doc": "docs"
-  },
+  "name": "back-end",
+  "version": "0.0.1",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon ./src/bin/server.js",
+    "start": "node ./src/bin/server.js"
   },
-  "author": "",
-  "license": "ISC",
   "dependencies": {
-    "@prisma/client": "^5.3.0",
-    "mongodb": "^6.0.0",
-    "prisma": "^5.3.0"
-  }
+    "@prisma/client": "^5.3.1",
+    "chalk": "^5.3.0",
+    "cookie-parser": "^1.4.6",
+    "express": "^4.18.2",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.48.0",
+    "nodemon": "^3.0.1",
+    "prettier": "^3.0.3",
+    "prisma": "^5.3.1"
+  },
+  "type": "module"
 }

@@ -11,7 +11,7 @@ Para garantir a segurança dos nossos dados, a API requer autenticação. Logo p
 
 ### Usuários
 
-1. Recupegar dados de um usuário
+1. Recuperar dados de um usuário
 
 ```
 GET /api/usuarios/{id}

@@ -1,6 +1,3 @@
-This is your Prisma schema file,
-// learn more about it in the docs: https://pris.ly/d/prisma-schema
-
 model Usuario {
   id      ObjectId      @id @map("_id") @test.Ignore // Mapeando o campo da chave primária, pois o Prisma não aceita a sintaxe "_id" do MongoDB
   historico ObjectId[] @test.Ignore // Estes @test.Ignore estão dizendo que o Prisma não irá gerenciar os campos que são específicos do MongoDB
