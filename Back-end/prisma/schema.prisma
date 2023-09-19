@@ -1,19 +1,27 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mongodb"
+  url      = env("DATABASE_URL")
+}
+
 model Usuario {
-  id      ObjectId      @id @map("_id") @test.Ignore // Mapeando o campo da chave primária, pois o Prisma não aceita a sintaxe "_id" do MongoDB
-  historico ObjectId[] @test.Ignore // Estes @test.Ignore estão dizendo que o Prisma não irá gerenciar os campos que são específicos do MongoDB
-  nome String
-  sobrenome String
-  email   String   @unique
-  senha String
-  steak Int
-  streakDate String
-  posts Post[]  // Definindo o relacionamento "um para muitos" com Post
+  id           String      @id @default(auto()) @map("_id")  @db.ObjectId
+  historico    String[]
+  nome         String
+  sobrenome    String
+  email        String     @unique
+  senha        String
+  streak        Int
+  streakDate   String
+  posts        String[]     // Definindo o relacionamento "um para muitos" com Post
 }
 
 model Post {
-  id              ObjectId      @id @map("_id") @test.Ignore 
-  usuario         ObjectId[]    @relation("posts") @test.Ignore  // Não estou tão certo quanto a utilização dessa anotação (@test.Ignore). Tenho que verificar com o Professor Fausto.
-  comentarios     ObjectId[]
+  id              String      @id @default(auto()) @map("_id")  @db.ObjectId
+  usuario_id      String      @db.ObjectId   // Campo para armazenar o ID do autor da publicação, relacionando com Usuario
   dataPublicacao  DateTime
   publicacao      String
   classificacao   String
