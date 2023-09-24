@@ -3,21 +3,25 @@ import '../../global.css';
 
 function Formulario({titulo, emailPlaceholde, senhaPlaceholder, toggleButton}) {
   return (
-    <div className='container'>
-        <h1 className='titulo'>{titulo}</h1>
+    <>
+      <div className='container'>
+          <h1 className='titulo'>{titulo}</h1>
 
-        <form action="">
-          <input className='input' type="email" placeholder={emailPlaceholde}/>
-          <input className='input' type="password" placeholder={senhaPlaceholder}/>
+          <form action="">
+            <input className='input' type="email" placeholder={emailPlaceholde}/>
+            <input className='input' type="password" placeholder={senhaPlaceholder}/>
 
-          {/* <a className='entrar' href="#">Entrar</a> */}
-          {toggleButton && <a className='entrar' href="#">Entrar</a>}
-          <a className='cadastrar' href="#">Cadastrar-se</a>
+            {/* <a className='entrar' href="#">Entrar</a> */}
+            {toggleButton && <a className='entrar' href="#">Entrar</a>}
+            <a className='cadastrar' href="#">Cadastrar-se</a>
 
-        </form>
+          </form>
 
-        <img src="/img/logo.png" alt="Logo" />
-      </div>
+          <img src="/img/logo.png" alt="Logo" />
+        </div>
+
+        <footer className='footer-login'>Code Reviewer</footer>
+      </>
   );
 }
 
