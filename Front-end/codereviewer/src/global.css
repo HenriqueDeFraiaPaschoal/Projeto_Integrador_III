@@ -1,6 +1,7 @@
 :root {
   --purple: #8B76D6;
   --green: rgba(0, 235, 142, 0.50);
+  --gray: rgba(255, 255, 255, 0.60);
 }
 
 .titulo, .entrar, .btnVoltar {
@@ -9,4 +10,8 @@
 
 .input::placeholder, .cadastrar {
   color: var(--green);
+}
+
+.footer-login {
+  color: var(--gray);
 }
