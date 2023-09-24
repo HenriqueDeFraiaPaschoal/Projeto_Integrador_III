@@ -1,0 +1,7 @@
+.tela-login {
+  max-height: 100vh;
+  display: flex;
+  justify-content: center;
+
+  margin-top: 15%;
+}
