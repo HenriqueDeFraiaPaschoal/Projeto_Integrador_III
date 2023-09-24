@@ -1,10 +1,14 @@
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
-import TelaLogin from'./Components/TelaLogin/TelaLogin'
+import TelaLogin from './pages/TelaLogin/TelaLogin'
+
 function App() {
   return (
-    <div className="App">
-      <TelaLogin/>
-    </div>
+    <Router>
+      <Routes>
+        <Route exact path="/Login" element={<TelaLogin/>}/>
+      </Routes>
+    </Router>
   );
 }
 

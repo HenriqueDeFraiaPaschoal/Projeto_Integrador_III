@@ -1,13 +1,11 @@
 import './TelaLogin.css';
 import '../../global.css'
-import Login from '../Login/Login';
-import Cadastro from '../Cadastro/Cadastro'
+import Login from '../../Components/Login/Login';
 
 function TelaLogin() {
-  return(
+  return (
     <div className='tela-login'>
       <Login/>
-      {/* <Cadastro/> */}
     </div>
   );
 }
