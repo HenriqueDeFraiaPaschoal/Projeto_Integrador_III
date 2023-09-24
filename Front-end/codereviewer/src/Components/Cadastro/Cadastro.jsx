@@ -5,15 +5,17 @@ import Formulario from '../Formulario/Formulario'
 
 function Cadastro() {
   return (
-    <div className='selecionado'>
+    <div className="cadastro-container">
       <Formulario
-      titulo="Bem-Vindo"
+        titulo="Bem-Vindo"
         emailPlaceholde="Forneça um email"
         senhaPlaceholder="Crie uma senha"
-        toggleButton={false}/>
-
+        toggleButton={false}
+      />
+      <div className='btnVoltarWrapper'>
         <a className='btnVoltar' href="#">Voltar</a>
       </div>
+    </div>
   );
 }
 
