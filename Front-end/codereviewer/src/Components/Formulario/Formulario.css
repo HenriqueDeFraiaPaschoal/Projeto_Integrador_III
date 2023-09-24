@@ -62,4 +62,7 @@ form img {
   bottom:1rem;
   width: 100%;
   text-align: center;
+
+  font-size: 1.3rem;
+  letter-spacing: -0.105px;
 }
