@@ -1,7 +1,9 @@
 .tela-login {
-  max-height: 100vh;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
 
-  margin-top: 15%;
+  padding-top: 12vh;
+
+  background: linear-gradient(180deg, #ffffff 50%, #c877ff);
 }
