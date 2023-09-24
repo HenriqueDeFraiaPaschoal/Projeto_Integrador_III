@@ -1,0 +1,12 @@
+:root {
+  --purple: #8B76D6;
+  --green: rgba(0, 235, 142, 0.50);
+}
+
+.titulo, .entrar, .btnVoltar {
+  color: var(--purple);
+}
+
+.input::placeholder, .cadastrar {
+  color: var(--green);
+}
