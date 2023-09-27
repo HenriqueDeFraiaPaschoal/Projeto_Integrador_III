@@ -1,0 +1,46 @@
+.titulo {
+  font-size: 1.9rem;
+  letter-spacing: -0.156px;
+  margin: 1rem 0;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form button, .input::placeholder {
+  font-size: 1rem;
+}
+
+.input {
+  width: 15.1rem;
+  height: 2.55rem;
+  padding: 9px 13px;
+
+  border: none;
+  border-radius: 22px;
+  box-shadow: 0px 0px 6px 2px rgba(139, 118, 214, 0.25);
+  margin-bottom: 20px;
+}
+
+.entrar, .input::placeholder {
+  letter-spacing: -0.087px;
+}
+
+.entrar {
+  margin-bottom: 14px;
+}
+
+/* Tela registo */
+.btn-voltar {
+  font-size: 14px;
+  background: transparent;
+  letter-spacing: -0.07px;
+}
+
+.btn-voltar {
+  margin: 1rem 0.8rem 0 0;
+  margin-left: auto;
+}
