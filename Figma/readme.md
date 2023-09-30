@@ -29,3 +29,24 @@ _Descrição: Foi criado fielmente a a partir do Lo Fi Wareframe._
 _Descrição: A partir da referencia do arquivo `HiFiWareframe_10092023V1` foi elaborado uma prototipação mobile mais estruturada e com disegn mais interessante, mas ainda respeitando os elementos pré-definidos no Hi Fi Wareframe._
 
 
+_Feedback: Professores apontaram a quantidade excessiva de cores, principalmente no fundo das telas, algo que torna dificil avaliar os outros objetos_
+
+
+**Arquivo: `HiFiPrototype_28092023V2`**
+
+_Descrição: Com base no feedback dos professores, as cores foram alteradas e uma abordagem mais sobria do design foi definida. A prototipação segue quase toda da mesma forma anterior, assim como os elementos._
+
+
+_Feedback: A nova distribuição das cores agora torna legível as páginas, porem ainda parece ser necessário se ater ao contraste entre as cores de alguns botões com o fundo. Outro detalhe apontado pela materia IHC (Interação Humano Computador) é sobre algumas **Heurísticas de Nilsen** que ficaram de fora._
+
+
+**1. Controle e Liberdade para o Usuário**
+**2. Prevenção de Erros**
+**3. Ajudar os Usuários a Reconhecer, Diagnosticar e Recuperar Erros**
+**4. Incluir formas de Ajudar o Usuário na Utilização do Site**
+
+
+_Ideia: Para a solução dos detalhes apontados pelo IHC:_
+
+**- Criar Pop-ups de orientações sobre as ações dos usuários e suas reações, dando liberdade e previnindo erros.**
+**- Elaborar um ícone para enviar o usuário a uma página que o oriente de forma adequada a utilizar a nossa aplicação caso possua alguma duvida.**
