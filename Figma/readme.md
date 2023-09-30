@@ -1,25 +1,27 @@
-# Projeto de Criação Visual e Prototipação
+# PASTA DE PROTOTIPOS VISUAIS EM FIGMA
 
-Bem-vindos ao nosso emocionante projeto! Esta pasta tem como objetivo armazenar o processo de criação visual dos elementos da nossa aplicação no Figma, bem como da sua prototipação. Nosso objetivo principal é auxiliar os desenvolvedores front-end a entenderem a ideia conceitual de como o site deve ser apresentado aos nossos usuários.
+Este arquivo `README.md`, assim como os demais arquivos `.fig` armazenados nesta pasta, possuem objetivos estritamente profissionais correlacionados à adiministração de equipe e desenvolvimento da criação visual dos elementos da nossa aplicação no Figma, bem como de sua prototipação. O objetivo principal é possuir um back-up das prototipações, auxiliar os desenvolvedores front-end a entenderem a ideia conceitual de como o site deve ser apresentado aos nossos usuários e manter registros da evolução do projeto.
 
-## Estrutura do Projeto
+## Organização dos documentos
 
-Além deste README, nosso repositório contém arquivos `.fig` que servem como um back-up de designs e prototipação. Estes arquivos possuem nomes protocolados de forma específica, relacionados a cada atualização feita durante o desenvolvimento da Identidade Visual e da prototipação do projeto. Certifique-se de consultar estes arquivos quando quiser retomar uma modificação de prototipagem ou conceito de design.
+No README, será registrado ideias, tarefas, feedbacks e explicações escritas de cada mudança efetuada em cada arquivo Figma identificado pelo seu protocolo. Tal protocolo é definido pela abreviação de seu tipo, a especificação do documento, a data de salvamento e sua versão.
 
-## Como Contribuir
 
-Se você é um desenvolvedor front-end ou está envolvido na criação visual deste projeto, há várias maneiras de contribuir:
+**EX:**
 
-1. **Revisões e Feedback:** Contribua fornecendo revisões e feedback construtivo sobre as criações visuais e protótipos. Isso nos ajuda a aprimorar nosso trabalho.
 
-2. **Implementação:** Se você estiver envolvido na implementação, siga as diretrizes do README principal e o arquivo .fig mais atual para garantir que a visão seja traduzida com precisão para o código.
+`HiFiPrototype_21092023V1`
 
-3. **Comentários:** Use a seção de problemas ou comentários no GitHub para discutir ideias, problemas ou melhorias potenciais relacionadas à criação visual e prototipação.
 
-4. **Atualização do .fig:** Certifique-se de manter o arquivo `.fig` antigo e poste um novo seguindo o protocolo de nomenclatura com as últimas versões de designs e prototipação.
+_Design da aplicação em alta definição (Hi-Fi) prototipado, criado no dia 21 de setembro em 2023, primeira versão (V1)._
 
-## Contato
 
-Se você tiver alguma dúvida, sugestão ou precisar de assistência adicional, entre em contato com a equipe de desenvolvimento ou os responsáveis pelo projeto através do próprio Github ou pelas redes sociais mencionadas no README principal. Estamos ansiosos para trabalhar em em conjunto e criar uma experiência visual excepcional para nossos usuários.
+Os arquivos .fig terão todos os elementos visuais de uma determinada versão do desenvolvimento do projeto como um salvamento local.
 
-Vamos criar algo incrível juntos!
+
+## Lista detalhada de processo:
+
+
+
+
+
