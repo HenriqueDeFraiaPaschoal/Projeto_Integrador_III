@@ -7,10 +7,7 @@ Este arquivo `README.md`, assim como os demais arquivos `.fig` armazenados nesta
 No README, será registrado ideias, tarefas, feedbacks e explicações escritas de cada mudança efetuada em cada arquivo Figma identificado pelo seu protocolo. Tal protocolo é definido pela abreviação de seu tipo, a especificação do documento, a data de salvamento e sua versão.
 
 
-**EX:**
-
-
-`HiFiPrototype_21092023V1`
+**EX:** `HiFiPrototype_21092023V1`
 
 
 _Design da aplicação em alta definição (Hi-Fi) prototipado, criado no dia 21 de setembro em 2023, primeira versão (V1)._
@@ -21,7 +18,10 @@ Os arquivos .fig terão todos os elementos visuais de uma determinada versão do
 
 ## Lista detalhada de processo:
 
+**Arquivo: `HiFiWareframe_10092023V1`**
 
+
+_Descrição: Foi criado fielmente a a partir do Lo Fi Wareframe._
 
 
 
