@@ -24,4 +24,8 @@ Os arquivos .fig terão todos os elementos visuais de uma determinada versão do
 _Descrição: Foi criado fielmente a a partir do Lo Fi Wareframe._
 
 
+**Arquivo: `HiFiPrototype_21092023V1`**
+
+_Descrição: A partir da referencia do arquivo `HiFiWareframe_10092023V1` foi elaborado uma prototipação mobile mais estruturada e com disegn mais interessante, mas ainda respeitando os elementos pré-definidos no Hi Fi Wareframe._
+
 
