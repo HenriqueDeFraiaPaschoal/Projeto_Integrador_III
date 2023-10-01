@@ -1,0 +1,63 @@
+<mxfile host="65bd71144e">
+    <diagram id="WL8BF8jxlbgVsBW6uYVf" name="Page-1">
+        <mxGraphModel dx="638" dy="476" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="2" value="Usuario" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="410" y="640" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="7" value="Post" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="400" y="390" width="150" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="8" value="&lt;span style=&quot;&quot;&gt;_id: ObjectId&lt;br&gt;&lt;/span&gt;parentId: StringId?&lt;br&gt;&lt;span style=&quot;&quot;&gt;usuario: UsuarioId&lt;br&gt;comentarios: PostId[]&lt;br&gt;&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;dataPublicacao: DateTime&lt;/span&gt;&lt;/div&gt;&lt;span style=&quot;&quot;&gt;publicação: String&lt;br&gt;&lt;br&gt;&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
+                    <mxGeometry x="400" y="440" width="150" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="34" value="" style="endArrow=diamondThin;endFill=0;endSize=24;html=1;edgeStyle=orthogonalEdgeStyle;exitX=0.533;exitY=-0.045;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="2" edge="1">
+                    <mxGeometry width="160" relative="1" as="geometry">
+                        <mxPoint x="473.8" y="620" as="sourcePoint"/>
+                        <mxPoint x="473.8" y="560" as="targetPoint"/>
+                        <Array as="points"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="35" value="1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="34" vertex="1" connectable="0">
+                    <mxGeometry x="-0.2928" y="1" relative="1" as="geometry">
+                        <mxPoint x="-13" y="21" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="36" value="0..*" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="34" vertex="1" connectable="0">
+                    <mxGeometry x="-0.4724" relative="1" as="geometry">
+                        <mxPoint x="36" y="-36" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="40" value="" style="endArrow=diamondThin;endFill=0;endSize=24;html=1;edgeStyle=orthogonalEdgeStyle;entryX=1;entryY=0.182;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="7" target="8" edge="1">
+                    <mxGeometry width="160" relative="1" as="geometry">
+                        <mxPoint x="500" y="370" as="sourcePoint"/>
+                        <mxPoint x="630" y="430" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="425" y="360"/>
+                            <mxPoint x="640" y="360"/>
+                            <mxPoint x="640" y="462"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="41" value="0..*" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="40" vertex="1" connectable="0">
+                    <mxGeometry x="-0.2928" y="1" relative="1" as="geometry">
+                        <mxPoint x="17" y="81" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="42" value="1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="40" vertex="1" connectable="0">
+                    <mxGeometry x="-0.4724" relative="1" as="geometry">
+                        <mxPoint x="-45" y="20" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="43" value="Denys Ferreira Malta &lt;br&gt;R.A. 109.139.222.3038&lt;br&gt;&lt;br&gt;Henrique de Fraia Paschoal &lt;br&gt;R.A. 109.139.222.3004&lt;br&gt;&lt;br&gt;Samuel Luiz Martins dos Santos R.A. 109.139.222.3033&lt;br&gt;&lt;br&gt;Victor Hugo Moro &lt;br&gt;R.A. 109.139.222.3018" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
+                    <mxGeometry x="20" y="930" width="180" height="160" as="geometry"/>
+                </mxCell>
+                <mxCell id="46" value="_id: ObjectId&lt;br&gt;posts: Post[]&lt;br&gt;nome: String&lt;br style=&quot;padding: 0px; margin: 0px;&quot;&gt;sobrenome: String&lt;br style=&quot;padding: 0px; margin: 0px;&quot;&gt;email: String&lt;br style=&quot;padding: 0px; margin: 0px;&quot;&gt;senha: String" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
+                    <mxGeometry x="410" y="700" width="120" height="90" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
