@@ -41,12 +41,25 @@ _Feedback: A nova distribuição das cores agora torna legível as páginas, por
 
 
 **1. Controle e Liberdade para o Usuário**
+
 **2. Prevenção de Erros**
+
 **3. Ajudar os Usuários a Reconhecer, Diagnosticar e Recuperar Erros**
+
 **4. Incluir formas de Ajudar o Usuário na Utilização do Site**
 
 
 _Ideia: Para a solução dos detalhes apontados pelo IHC:_
 
 **- Criar Pop-ups de orientações sobre as ações dos usuários e suas reações, dando liberdade e previnindo erros.**
+
 **- Elaborar um ícone para enviar o usuário a uma página que o oriente de forma adequada a utilizar a nossa aplicação caso possua alguma duvida.**
+
+
+**Arquivo: `HiFiPrototype_02102023V3`**
+
+_Descrição: Com base nos feedbacks anteriores, foi incluido pop-ups para auxiliarem nas decisões dos usuários e prevenir possíveis erros. Por enquanto não foi criado uma documentação detalhada como um guia para o usuário se orientar em nossa página, portanto, essa opção não foi incluida._
+
+_Feedback:_
+
+_Ideia: Seria interessante, para usuários de descktop, incluir uma prototipação de macbook e incluir hooveres para deixar claro quais são as opções clicáveis que o usuário pode interagir._
