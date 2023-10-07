@@ -60,6 +60,25 @@ _Ideia: Para a solução dos detalhes apontados pelo IHC:_
 
 _Descrição: Com base nos feedbacks anteriores, foi incluido pop-ups para auxiliarem nas decisões dos usuários e prevenir possíveis erros. Por enquanto não foi criado uma documentação detalhada como um guia para o usuário se orientar em nossa página, portanto, essa opção não foi incluida._
 
-_Feedback:_
+_Feedback: Um detalhe em IHC foi levantado. A distancia que o usuário precisa percorrer para confirmar os pop-ups está muito grante, o que pode acarretar em um desconforto na usabilidade. Um colega apontou o fato da logo da empresa na nos conteiners de login e novo usuário estava dando a impressão de ser um botão, algo que ele não é, e sua relação com a marca `Code Reviewer` está muito distante._
 
 _Ideia: Seria interessante, para usuários de descktop, incluir uma prototipação de macbook e incluir hooveres para deixar claro quais são as opções clicáveis que o usuário pode interagir._
+
+**Arquivo: `HiFiPrototype_06102023V4`**
+
+_Descrição: Foi alterado as posições dos pop-ups para o conforto do usuário e foi adicionado aos principais elementos da prototipação em descktop_
+
+**Arquivo: `HiFi-FinalAndroidPrototype_06102023V1`**
+
+_Descrição: Foi finalizado a prototipação completa do modelo mobile do projeto_
+
+**Link: `https://www.figma.com/proto/6vWdG2FPdyWZwsaSJXARc5/High-Fi-Project?type=design&node-id=13-123&t=UtNONUIhZJk0Uyiw-0&scaling=scale-down&page-id=0%3A1&starting-point-node-id=13%3A123`**
+
+**Arquivo: `HiFi-FinalDescktopPrototype_06102023V1`**
+
+_Descrição: Foi finalizado a prototipação completa do modelo descktop do projeto_
+
+**Link: `https://www.figma.com/proto/6vWdG2FPdyWZwsaSJXARc5/High-Fi-Project?type=design&node-id=215-386&t=UtNONUIhZJk0Uyiw-0&scaling=scale-down&page-id=215%3A385&starting-point-node-id=215%3A386`**
+
+**Detalhes:**
+_Como mencionado anteriormente. Ainda é necessário ser criado uma documentação para orientar o usuário na utilização da página e linkar ela ao projeto. Também ficou a ser incluido as alterações do cores em botões com o modo hoouver. Algo que pode ainda precisar de atenção é a distribuição das cores e sombreamentos._
