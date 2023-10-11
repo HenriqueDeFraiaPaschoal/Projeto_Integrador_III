@@ -1,0 +1,24 @@
+# login:
+
+auth
+email & password
+
+
+# register:
+
+create
+email & password
+
+# home
+
+"/" = login
+"/home"
+auth
+
+# my_profile
+
+
+# medalhas (streak)
+
+
+
