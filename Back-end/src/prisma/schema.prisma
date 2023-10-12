@@ -8,21 +8,19 @@ datasource db {
 }
 
 model Usuario {
-  id           String      @id @default(auto()) @map("_id")  @db.ObjectId
-  historico    String[]
+  id           String     @id @default(auto()) @map("_id") @db.ObjectId
+  posts        Post[]     @relation("UsuarioPosts")
   nome         String
   sobrenome    String
   email        String     @unique
   senha        String
-  streak        Int
-  streakDate   String
-  posts        String[]     // Definindo o relacionamento "um para muitos" com Post
 }
 
 model Post {
-  id              String      @id @default(auto()) @map("_id")  @db.ObjectId
-  usuario_id      String      @db.ObjectId   // Campo para armazenar o ID do autor da publicação, relacionando com Usuario
+  id              String     @id @default(auto()) @map("_id") @db.ObjectId
+  parentId        String?
+  usuario         String     @relation("UsuarioPosts", fields: [usuario], references: [id])
+  comentarios     Post[]     @relation("ComentarioPosts", references: [id])
   dataPublicacao  DateTime
   publicacao      String
-  classificacao   String
 }

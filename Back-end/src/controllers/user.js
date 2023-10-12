@@ -1,10 +1,19 @@
-// controllers/user.controller.js
-import { PrismaClient } from '@prisma/client';
+import prisma from '../database/client.js';
 
-const prisma = new PrismaClient();
+const controller = {};
 
-const UserController = {
-  getUserById: async (req, res) => {
+controller.findAll = async function (req, res) {
+  try {
+    // Fetch all user information from the database using Prisma
+    const users = await prisma.user.findMany();
+    res.status(200).json(users);
+  } catch (error) {
+    console.error('Error retrieving users:', error);
+    res.status(500).json({ message: 'Internal server error' });
+  }
+},
+
+  controller.create = async function (req, res) {
     try {
       const { id } = req.params;
 
@@ -26,7 +35,7 @@ const UserController = {
     }
   },
 
-  updateUserProfile: async (req, res) => {
+  controller.update = async (req, res) => {
     try {
       const { id } = req.params;
       const { name, email } = req.body;
@@ -47,7 +56,6 @@ const UserController = {
       console.error('Error updating user profile:', error);
       res.status(500).json({ message: 'Internal server error' });
     }
-  },
-};
+  };
 
-export default UserController;
+export default controller;

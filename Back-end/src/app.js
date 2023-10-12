@@ -1,9 +1,9 @@
 import express, { json, urlencoded } from "express";
 import cookieParser from "cookie-parser";
 import logger from "morgan";
-
-import indexRouter from "./routes/index.js";
-import usersRouter from "./routes/usersRouter.js";
+import router from "./routes/user.js"
+import dotenv from 'dotenv';
+dotenv.config();
 
 const app = express();
 
@@ -12,7 +12,6 @@ app.use(json());
 app.use(urlencoded({ extended: false }));
 app.use(cookieParser());
 
-app.use("/", indexRouter);
-app.use("/users", usersRouter);
+app.use("/users", router);
 
 export default app;
