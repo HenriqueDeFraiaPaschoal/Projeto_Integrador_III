@@ -9,18 +9,15 @@ datasource db {
 
 model Usuario {
   id           String     @id @default(auto()) @map("_id") @db.ObjectId
-  posts        Post[]     @relation("UsuarioPosts")
-  nome         String
-  sobrenome    String
+  userName     String
   email        String     @unique
   senha        String
 }
 
 model Post {
   id              String     @id @default(auto()) @map("_id") @db.ObjectId
-  parentId        String?
-  usuario         String     @relation("UsuarioPosts", fields: [usuario], references: [id])
-  comentarios     Post[]     @relation("ComentarioPosts", references: [id])
-  dataPublicacao  DateTime
-  publicacao      String
+  parentId        String?    @db.ObjectId
+  usuarioId       String     @unique @db.ObjectId
+  postDate        DateTime
+  content         String
 }

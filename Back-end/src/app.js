@@ -1,9 +1,6 @@
 import express, { json, urlencoded } from "express";
 import cookieParser from "cookie-parser";
 import logger from "morgan";
-import router from "./routes/user.js"
-import dotenv from 'dotenv';
-dotenv.config();
 
 const app = express();
 
@@ -12,6 +9,12 @@ app.use(json());
 app.use(urlencoded({ extended: false }));
 app.use(cookieParser());
 
-app.use("/users", router);
+// ROTAS DA APLICAÇÃO BACK-END
+
+import userRoute from './routes/user.js';
+app.use('/user', userRoute);
+
+import postRoute from './routes/post.js';
+app.use('/post', postRoute);
 
 export default app;

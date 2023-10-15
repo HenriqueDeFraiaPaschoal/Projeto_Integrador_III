@@ -7,7 +7,7 @@
     "start": "node ./src/bin/server.js"
   },
   "dependencies": {
-    "@prisma/client": "^5.3.1",
+    "@prisma/client": "^5.4.2",
     "body-parser": "^1.20.2",
     "chalk": "^5.3.0",
     "cookie-parser": "^1.4.6",
@@ -19,7 +19,7 @@
     "eslint": "^8.48.0",
     "nodemon": "^3.0.1",
     "prettier": "^3.0.3",
-    "prisma": "^5.3.1"
+    "prisma": "^5.4.2"
   },
   "type": "module",
   "description": "Bem-vindo à API do CodeReviewer! Este documento contém informações essenciais para que você possa interagir com a nossa API de maneira eficaz.",
