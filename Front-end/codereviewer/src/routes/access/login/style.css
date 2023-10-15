@@ -10,7 +10,7 @@ form {
   align-items: center;
 }
 
-form button, .input::placeholder {
+form button, .input::placeholder, .cadastrar {
   font-size: 1rem;
 }
 
@@ -31,16 +31,4 @@ form button, .input::placeholder {
 
 .entrar {
   margin-bottom: 14px;
-}
-
-/* Tela registo */
-.btn-voltar {
-  font-size: 14px;
-  background: transparent;
-  letter-spacing: -0.07px;
-}
-
-.btn-voltar {
-  margin: 1rem 0.8rem 0 0;
-  margin-left: auto;
 }

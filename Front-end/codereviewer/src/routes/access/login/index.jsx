@@ -1,17 +1,26 @@
-import './style.css';
+import "./style.css"
 
 export const Login = () => {
 
-    return (
-      <>
-        <h1 className='titulo'>Entrar</h1>
+  const handleLogin = () => {
+    console.log('login...')
+  }
+  return (
+    <>
+      <h1 className="titulo">Entrar</h1>
 
-        <form action="">
-            <input className='input' type="email" placeholder="Insira seu email"/>
-            <input className='input' type="password" placeholder="insira sua senha"/>
+      <form onSubmit={handleLogin} >
+        <input className="input" type="email" placeholder="Insira seu email" />
+        <input
+          className="input"
+          type="password"
+          placeholder="insira sua senha"
+        />
 
-            <button className='entrar' href="#">Entrar</button>
-        </form>
-      </>
-    )
+        <button className="entrar" type="submit">
+          Entrar
+        </button>
+      </form>
+    </>
+  )
 }
