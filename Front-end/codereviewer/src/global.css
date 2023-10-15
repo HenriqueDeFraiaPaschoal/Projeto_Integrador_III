@@ -12,6 +12,8 @@
   color: var(--green);
 }
 
-.footer-login {
-  color: var(--gray);
+button {
+  border: none;
+  background: transparent;
+  cursor: pointer;
 }

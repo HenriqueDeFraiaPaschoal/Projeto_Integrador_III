@@ -1,18 +1,17 @@
-import '../login/style.css';
+import "../login/style.css"
 
 export const Register = () => {
-
   return (
     <>
-      <h1 className='titulo'>Bem-Vindo</h1>
+      <h1 className="titulo">Bem-Vindo</h1>
 
       <form action="">
-        <input className='input' type="email" placeholder="Forneça email"/>
-        <input className='input' type="password" placeholder="insira sua senha"/>
+        <input className="input" type="email" placeholder="Forneça um email" />
+        <input className="input" type="password" placeholder="Crie uma senha" />
 
-        <button className='entrar' href="#">ja possui uma conta?</button>
-
-        {/* <button className='btn-voltar' href="#">Voltar</button> */}
+        <button type="submit" className="entrar" href="#">
+          ja possui uma conta?
+        </button>
       </form>
     </>
   )

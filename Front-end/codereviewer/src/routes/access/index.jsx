@@ -1,17 +1,22 @@
-import { Outlet } from "react-router-dom";
-import './style.css';
+import { Logo } from "components/Logo"
+import { Outlet } from "react-router-dom"
+import "./style.css"
 
 export const AccessPage = () => {
-
-    return (
-      <div className='tela-login'>
-        <div className='container'>
-          <Outlet/>
+  return (
+    <>
+      <div className="tela-login">
+        <div className="container">
+          <Outlet />
           <button className="cadastrar">Cadastrar-se</button>
-          <img src="/img/logo.png" alt="Logo" />
         </div>
 
-        <footer className='footer-login'>Code Reviewer</footer>
+        <section className="footer-container">
+          <Logo/>
+          <p>Code Reviewer</p>
+        </section>
+
       </div>
-    )
+    </>
+  )
 }
