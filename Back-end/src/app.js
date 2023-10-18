@@ -15,6 +15,6 @@ import userRoute from './routes/user.js';
 app.use('/user', userRoute);
 
 import postRoute from './routes/post.js';
-app.use('/post', postRoute);
+app.use('/', postRoute);
 
 export default app;

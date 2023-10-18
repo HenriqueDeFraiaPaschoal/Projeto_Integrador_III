@@ -7,17 +7,17 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
-model Usuario {
+model users {
   id           String     @id @default(auto()) @map("_id") @db.ObjectId
-  userName     String
+  username     String
   email        String     @unique
   senha        String
 }
 
-model Post {
+model post {
   id              String     @id @default(auto()) @map("_id") @db.ObjectId
   parentId        String?    @db.ObjectId
-  usuarioId       String     @unique @db.ObjectId
+  userId          String     @unique @db.ObjectId
   postDate        DateTime
   content         String
 }

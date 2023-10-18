@@ -4,7 +4,7 @@ const controller = {};
 
 controller.create = async function(req, res) {
   try {
-    await prisma.Usuario.create({data: req.body})
+    await prisma.users.create({data: req.body})
     res.status(201).end()
   }
   catch(error) {
@@ -15,9 +15,9 @@ controller.create = async function(req, res) {
 
 controller.findAll = async function(req, res) {
   try {
-    const result = await prisma.Usuario.findMany({
+    const result = await prisma.users.findMany({
       orderBy: [
-        { userName: 'asc' },  // Ordem ascendente
+        { username: 'asc' },  // Ordem ascendente
       ]
     })
     res.send(result)
@@ -30,7 +30,7 @@ controller.findAll = async function(req, res) {
 
 controller.findOne = async function(req, res) {
   try {
-    const result = await prisma.Usuario.findUnique({
+    const result = await prisma.users.findUnique({
       where: { id: req.params.id }
     })
 
@@ -46,7 +46,7 @@ controller.findOne = async function(req, res) {
 
 controller.update = async function(req, res) {
   try {
-    const result = await prisma.Usuario.update({
+    const result = await prisma.users.update({
       where: { id: req.params.id },
       data: req.body
     })
@@ -63,7 +63,7 @@ controller.update = async function(req, res) {
 
 controller.delete = async function(req, res) {
   try {
-    const result = await prisma.Usuario.delete({
+    const result = await prisma.users.delete({
       where: { id: req.params.id }
     })
 
