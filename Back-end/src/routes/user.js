@@ -4,7 +4,7 @@ import controller from '../controllers/user.js';
 const router = Router();
 
 // Rota para criar um usuário
-router.post('/', controller.create);
+router.post('/users', controller.create);
 
 // Rota para buscar todos os usuários
 router.get('/users', controller.findAll);
