@@ -1,3 +1,15 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  text-transform: uppercase;
+  
+  font-family: 'Mulish', sans-serif;
+  scroll-behavior: smooth;
+  transition: ease-in-out 1s ease;
+}
+
 :root {
   --purple: #8B76D6;
   --green: rgba(0, 235, 142, 0.50);

@@ -1,24 +1,61 @@
+import React from "react"
 import "./style.css"
+import { useNavigate } from "react-router-dom"
+import { Signin } from "services/users"
 
 export const Login = () => {
+  const [userData, setUserData] = React.useState({
+    user: "",
+    password: "",
+  })
 
-  const handleLogin = () => {
-    console.log('login...')
+  const handleGetInputs = (e) => {
+    const { name, value } = e.target
+    setUserData({ ...userData, [name]: value })
   }
+  const navigate = useNavigate()
+
+  const handleLogin = async (e) => {
+    e.preventDefault()
+
+    try {
+     await Signin(userData)
+    } catch (error) {
+      console.error(error)
+    }
+  }
+
+
   return (
     <>
       <h1 className="titulo">Entrar</h1>
 
-      <form onSubmit={handleLogin} >
-        <input className="input" type="email" placeholder="Insira seu email" />
+      <form onSubmit={(e) => handleLogin(e)}>
+        <input
+          className="input"
+          type="email"
+          id="user"
+          name="user"
+          placeholder="Insira seu email"
+          value={userData.user}
+          onChange={(e) => handleGetInputs(e)}
+        />
+
         <input
           className="input"
           type="password"
           placeholder="insira sua senha"
+          id="password"
+          name="password"
+          value={userData.password}
+          onChange={(e) => handleGetInputs(e)}
         />
 
         <button className="entrar" type="submit">
           Entrar
+        </button>
+        <button className="cadastrar" onClick={() => navigate("/register")}>
+          Cadastrar-se
         </button>
       </form>
     </>

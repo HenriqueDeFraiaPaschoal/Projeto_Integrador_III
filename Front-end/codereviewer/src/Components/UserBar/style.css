@@ -1,0 +1,30 @@
+.user-container {
+  width: fit-content;
+  height: auto;
+}
+
+.user-content {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+.user-content p {
+  margin-top: 1rem;
+  font-size: 1.18663rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.00594rem;
+}
+
+.user-content p small {
+  color: #f0ada0;
+  font-family: Rounded Mplus 1c Bold;
+  font-size: 0.58419rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.00294rem;
+}

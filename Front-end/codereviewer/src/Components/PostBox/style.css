@@ -1,0 +1,22 @@
+.post-container {
+  width: 18rem;
+  border-radius: 0.58419rem;
+  border: 0.292px solid rgba(0, 0, 0, 0.01);
+  background: var(--Branco, #fff);
+  box-shadow: 0px 0px 2.33672px 1.16836px rgba(139, 118, 214, 0.5);
+  padding: 1.4rem 1.8rem;
+  margin-top: 0.25rem;
+}
+
+.post-container h2,
+p {
+  font-size: 0.63894rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 135%; /* 0.86256rem */
+  letter-spacing: -0.00319rem;
+}
+
+.post-container h2 {
+  margin-bottom: 1rem;
+}
