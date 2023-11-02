@@ -14,6 +14,7 @@
   --purple: #8B76D6;
   --green: rgba(0, 235, 142, 0.50);
   --gray: rgba(255, 255, 255, 0.60);
+  --orange: #F0ADA0;
 }
 
 .titulo, .entrar, .btnVoltar {
