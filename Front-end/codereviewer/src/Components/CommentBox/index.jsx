@@ -3,31 +3,28 @@ import { Rating } from "primereact/rating"
 import { IconProfile } from "assets/icons/IconProfile"
 import "./style.css"
 
-import { comments } from "mock/comments"
-
-export const CommentBox = () => {
+export const CommentBox = ({ comments }) => {
   const [value, setValue] = React.useState(0)
-
-  const changeRating = () => {}
 
   return (
     <div>
-      <div className="comment-container">
-        {comments &&
-          comments.map((comment, index) => (
-            <div key={index} className="comment-content">
-              <div className="comment-area">
-                <Rating className="star" onChange={changeRating} cancel={false} />
-                <p>{comment}</p>
-              </div>
-              <hr />
-              <div className="icon-container">
-                <IconProfile />
-              </div>
-            </div>
-          ))}
+      <div>
+        <div className="comment-content">
+          <div className="comment-area">
+            <Rating
+              className="star"
+              value={value}
+              onChange={(e) => setValue(e.target.value)}
+              cancel={false}
+            />
+            <p>{comments}</p>
+          </div>
+          <hr />
+          <div className="icon-container">
+            <IconProfile />
+          </div>
+        </div>
       </div>
-          <button>Comentar</button>
     </div>
   )
 }

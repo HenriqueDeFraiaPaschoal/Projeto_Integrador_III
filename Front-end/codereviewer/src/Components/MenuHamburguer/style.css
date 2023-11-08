@@ -1,16 +1,16 @@
 .menu-container {
-    cursor: pointer;
-    display: flex;
-    cursor: pointer;
-  }
-  
-  .icon-container {
-    display: flex;
-    overflow: hidden;
-    max-width: 0;
-    transition: max-width 0.3s ease;
-  }
-  
-  .menu-container.open .icon-container {
-    max-width: 200px;
-  }
+  cursor: pointer;
+  display: flex;
+  cursor: pointer;
+}
+
+.icon-container {
+  display: flex;
+  overflow: hidden;
+  max-width: 0;
+  transition: max-width 0.3s ease;
+}
+
+.menu-container.open .icon-container {
+  max-width: 200px;
+}
