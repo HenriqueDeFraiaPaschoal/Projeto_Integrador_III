@@ -19,12 +19,11 @@ export const Login = () => {
     e.preventDefault()
 
     try {
-     await Signin(userData)
+      await Signin(userData)
     } catch (error) {
       console.error(error)
     }
   }
-
 
   return (
     <>
@@ -51,7 +50,11 @@ export const Login = () => {
           onChange={(e) => handleGetInputs(e)}
         />
 
-        <button className="entrar" type="submit">
+        <button
+          className="entrar"
+          type="submit"
+          onClick={() => navigate("/dashboard")}
+        >
           Entrar
         </button>
         <button className="cadastrar" onClick={() => navigate("/register")}>
