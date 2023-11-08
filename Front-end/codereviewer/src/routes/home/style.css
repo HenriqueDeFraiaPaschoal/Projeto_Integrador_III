@@ -3,7 +3,7 @@
   min-height: 100;
   display: flex;
   align-items: center;
-  padding: 0. 2.5rem;
+  padding: 0 10%;
   justify-content: center;
   flex-direction: column;
   gap: 50px;
@@ -29,13 +29,27 @@
   width: 100%;
   margin-top: 6rem;
   position: relative;
-  padding: 0 10%;
+  /* padding: 0 10%; */
 }
 
-.show-more{
+.show-more {
   color: var(--purple);
   cursor: pointer;
   padding: 0 0.2rem;
   text-align: right;
   font-size: 1.8rem;
+  margin-bottom: 2rem;
+}
+
+.comment-box {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.5s ease;
+}
+
+.comment-box.active {
+  opacity: 1;
+  max-height: 1000px;
+  overflow: visible;
 }
