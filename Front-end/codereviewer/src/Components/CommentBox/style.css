@@ -1,0 +1,37 @@
+.comment-container {
+  min-width: 18rem;
+  border-radius: 0.6rem;
+  border: 0.292px solid rgba(0, 0, 0, 0.01);
+  box-shadow: 0px 0px 2.33672px 1.16836px rgba(139, 118, 214, 0.5);
+}
+
+.comment-content {
+  padding: 0.8rem 0 0.8rem 0.8rem;
+  display: flex;
+}
+
+.comment-content hr {
+  margin: 0 0.5rem 0;
+  border: 1px solid var(--orange);
+}
+
+.comment-area {
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+ }
+.comment-area p {
+  text-align: right;
+  margin-top: 0.5rem;
+}
+.star {
+  color: var(--purple);
+  gap: 0.8rem;
+}
+
+.icon-container {
+min-width: 46px;
+width: 100%;
+height: fit-content;
+}
