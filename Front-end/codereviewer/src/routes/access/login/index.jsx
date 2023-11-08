@@ -2,6 +2,7 @@ import React from "react"
 import "./style.css"
 import { useNavigate } from "react-router-dom"
 import { Signin } from "services/users"
+import { UserInfo } from "components/UserInfo"
 
 export const Login = () => {
   const [userData, setUserData] = React.useState({
@@ -61,6 +62,7 @@ export const Login = () => {
           Cadastrar-se
         </button>
       </form>
+      <UserInfo />
     </>
   )
 }

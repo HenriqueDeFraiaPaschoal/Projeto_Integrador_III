@@ -1,6 +1,7 @@
 import { IconProfile } from "assets/icons/IconProfile"
 import { Medalha01 } from "assets/icons/medalhas/Medalha01"
 import { Medalha02 } from "assets/icons/medalhas/Medalha02"
+import { Medalha03 } from "assets/icons/medalhas/Medalha03"
 import { Medalha04 } from "assets/icons/medalhas/Medalha04"
 import "./style.css"
 
@@ -16,7 +17,7 @@ export const UserInfo = () => {
         <div className="medal-content">
           <Medalha01 />
           <Medalha02 />
-          {/* <Medalha03 /> */}
+          <Medalha03 />
           <Medalha04 />
         </div>
       </div>
