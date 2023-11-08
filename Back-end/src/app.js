@@ -12,7 +12,7 @@ app.use(cookieParser());
 // ROTAS DA APLICAÇÃO BACK-END
 
 import userRoute from './routes/user.js';
-app.use('/user', userRoute);
+app.use('/', userRoute);
 
 import postRoute from './routes/post.js';
 app.use('/', postRoute);

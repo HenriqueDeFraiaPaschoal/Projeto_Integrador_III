@@ -28,7 +28,7 @@ controller.findAll = async function(req, res) {
   }
 }
 
-controller.findOne = async function(req, res) {
+ controller.findOne = async function(req, res) {
   try {
     const result = await prisma.Post.findUnique({
       where: { id: req.params.id }
@@ -42,7 +42,7 @@ controller.findOne = async function(req, res) {
     console.error(error)
     res.status(500).send(error)
   }
-}
+} 
 
 controller.update = async function(req, res) {
   try {
