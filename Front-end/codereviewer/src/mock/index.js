@@ -1,7 +1,25 @@
-export const userPost = {
-  user: "Usuario321",
-  question: {
-    ask: "Ajuda com loop em Python",
-    body: "Olá pessoal! Estou com dificuldades em criar um loop em Python. Preciso percorrer uma lista de números e imprimir cada número. Alguém pode me ajudar?",
+export const userPost = [
+  {
+    user: "Samuel",
+    question: {
+      ask: "Ajuda com loop em Python",
+      body: "Olá pessoal! Estou com dificuldades em criar um loop em Python. Preciso percorrer uma lista de números e imprimir cada número. Alguém pode me ajudar?",
+    },
+    comments: [
+      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime ad eos ex asperiores corporis quidem ullam nesciunt quasi, quae molestias minus vel veniam expedita consequatur assumenda explicabomodi aspernatur ea. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime ad eos ex asperiores corporis quidem ullam nesciunt quasi, quae molestias minus vel veniam expedita consequatur assumenda explicabo modi aspernatur ea. ",
+      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime ad eos ex asperiores corporis quidem ullam nesciunt quasi, quae molestias minus vel veniam expedita consequatur assumenda explicabomodi aspernatur ea. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime ad eos ex asperiores corporis quidem ullam nesciunt quasi, quae molestias minus vel veniam expedita consequatur assumenda explicabo modi aspernatur ea. ",
+    ],
   },
-};
+
+  {
+    user: "Victor",
+    question: {
+      ask: "Ajuda com loop em Python",
+      body: "Olá pessoal! Estou com dificuldades em criar um loop em Python. Preciso percorrer uma lista de números e imprimir cada número. Alguém pode me ajudar?",
+    },
+    comments: [
+      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime ad eos ex asperiores corporis quidem ullam nesciunt quasi, quae molestias minus vel veniam expedita consequatur assumenda explicabomodi aspernatur ea. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime ad eos ex asperiores corporis quidem ullam nesciunt quasi, quae molestias minus vel veniam expedita consequatur assumenda explicabo modi aspernatur ea. ",
+      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime ad eos ex asperiores corporis quidem ullam nesciunt quasi, quae molestias minus vel veniam expedita consequatur assumenda explicabomodi aspernatur ea. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime ad eos ex asperiores corporis quidem ullam nesciunt quasi, quae molestias minus vel veniam expedita consequatur assumenda explicabo modi aspernatur ea. ",
+    ],
+  },
+]
