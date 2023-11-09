@@ -62,7 +62,6 @@ export const Login = () => {
           Cadastrar-se
         </button>
       </form>
-      <UserInfo />
     </>
   )
 }
