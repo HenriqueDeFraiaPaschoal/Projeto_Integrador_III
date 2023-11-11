@@ -7,21 +7,20 @@ datasource db {
   url      = env("DB_URL")
 }
 
-model User {
+model users {
   id           String     @id @default(auto()) @map("_id") @db.ObjectId
   username     String
   email        String     @unique
   senha        String
-  posts     Post[]
+  posts        post[]
 }
 
-model Post {
-  id        String   @id @default(auto()) @map("_id") @db.ObjectId
-  parentId  String?  @db.ObjectId
-  userId    String  @db.ObjectId
+model post {
+  id        String    @id @default(auto()) @map("_id") @db.ObjectId
+  parentId  String?   @db.ObjectId
+  userId    String    @db.ObjectId
   postDate  DateTime
   content   String
 
-  User      User     @relation(fields: [userId], references: [id])
-  // Parent    Post?    @relation("PostToParent", fields: [parentId], references: [id])
+  user      users    @relation(fields: [userId], references: [id])
 }

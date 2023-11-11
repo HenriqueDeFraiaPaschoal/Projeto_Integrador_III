@@ -4,7 +4,7 @@ import controller from '../controllers/post.js';
 const router = Router();
 
 // Rota para criar um post
-router.post('/', controller.create);
+router.post('/post', controller.create);
 
 // Rota para buscar todos os posts
 router.get('/posts', controller.findAll);

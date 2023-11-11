@@ -4,7 +4,7 @@ const controller = {};
 
 controller.create = async function(req, res) {
   try {
-    await prisma.Post.create({data: req.body})
+    await prisma.post.create({data: req.body})
     res.status(201).end()
   }
   catch(error) {
@@ -15,7 +15,7 @@ controller.create = async function(req, res) {
 
 controller.findAll = async function(req, res) {
   try {
-    const result = await prisma.Post.findMany({
+    const result = await prisma.post.findMany({
       orderBy: [
         { postDate: 'asc' },  // Ordem ascendente
       ]
@@ -30,7 +30,7 @@ controller.findAll = async function(req, res) {
 
  controller.findOne = async function(req, res) {
   try {
-    const result = await prisma.Post.findUnique({
+    const result = await prisma.post.findUnique({
       where: { id: req.params.id }
     })
 
@@ -46,7 +46,7 @@ controller.findAll = async function(req, res) {
 
 controller.update = async function(req, res) {
   try {
-    const result = await prisma.Post.update({
+    const result = await prisma.post.update({
       where: { id: req.params.id },
       data: req.body
     })
@@ -63,7 +63,7 @@ controller.update = async function(req, res) {
 
 controller.delete = async function(req, res) {
   try {
-    const result = await prisma.Post.delete({
+    const result = await prisma.post.delete({
       where: { id: req.params.id }
     })
 
