@@ -1,15 +1,29 @@
-import "../login/style.css"
+import React, { useState } from "react"
 import { useNavigate } from "react-router-dom"
+import axios from "axios"
+import { URL_BASE } from "constants"
 
 export const Register = () => {
   const navigate = useNavigate()
 
-  const handleRegister = (e) => {
+  const [registerData, setRegisterData] = useState({
+    user: "",
+    email: "",
+    password: "",
+  })
+
+  const handleRegister = async (e) => {
     e.preventDefault()
 
     try {
-      console.log("register...")
-    } catch (error) {}
+      const response = await axios.post(`${URL_BASE}/users`, registerData)
+
+      console.log("FOI!") // Lidar com a resposta do backend, se necessário
+
+      navigate("/")
+    } catch (error) {
+      console.error("Erro ao cadastrar usuário:", error)
+    }
   }
 
   return (
@@ -17,11 +31,37 @@ export const Register = () => {
       <h1 className="titulo">Bem-Vindo</h1>
 
       <form onSubmit={(e) => handleRegister(e)}>
-        <input className="input" type="email" placeholder="Forneça um email" />
-        <input className="input" type="password" placeholder="Crie uma senha" />
+      <input
+          className="input"
+          type="text"
+          placeholder="Forneça o usuário"
+          value={registerData.user}
+          onChange={(e) =>
+            setRegisterData({ ...registerData, user: e.target.value })
+          }
+        />
+
+        <input
+          className="input"
+          type="email"
+          placeholder="Forneça um email"
+          value={registerData.email}
+          onChange={(e) =>
+            setRegisterData({ ...registerData, email: e.target.value })
+          }
+        />
+        <input
+          className="input"
+          type="password"
+          placeholder="Crie uma senha"
+          value={registerData.password}
+          onChange={(e) =>
+            setRegisterData({ ...registerData, password: e.target.value })
+          }
+        />
 
         <button className="entrar" onClick={() => navigate("/")}>
-          ja possui uma conta?
+          Já possui uma conta?
         </button>
         <button className="cadastrar" type="submit">
           Cadastrar

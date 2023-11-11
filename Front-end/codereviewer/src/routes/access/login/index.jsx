@@ -1,30 +1,39 @@
-import React from "react"
-import "./style.css"
-import { useNavigate } from "react-router-dom"
-import { Signin } from "services/users"
-import { UserInfo } from "components/UserInfo"
+import React from "react";
+import "./style.css";
+import { useNavigate } from "react-router-dom";
+import axios from "axios";
+import { URL_BASE } from "constants";
 
 export const Login = () => {
   const [userData, setUserData] = React.useState({
     user: "",
     password: "",
-  })
+  });
 
   const handleGetInputs = (e) => {
-    const { name, value } = e.target
-    setUserData({ ...userData, [name]: value })
-  }
-  const navigate = useNavigate()
+    const { name, value } = e.target;
+    setUserData({ ...userData, [name]: value });
+  };
+  const navigate = useNavigate();
 
   const handleLogin = async (e) => {
-    e.preventDefault()
+    e.preventDefault();
 
     try {
-      await Signin(userData)
+      // Envie os dados de login para o backend
+      const response = await axios.get(`${URL_BASE}/users?user=${userData.user}&password=${userData.password}`);
+
+      // Se o login for bem-sucedido, redirecione para a rota "/dashboard"
+      if (response.data) {
+        navigate("/dashboard");
+      } else {
+        // Lidar com o caso de login falhado
+        console.log("Login falhou. Verifique seu email e senha.");
+      }
     } catch (error) {
-      console.error(error)
+      console.error(error);
     }
-  }
+  };
 
   return (
     <>
@@ -44,18 +53,14 @@ export const Login = () => {
         <input
           className="input"
           type="password"
-          placeholder="insira sua senha"
+          placeholder="Insira sua senha"
           id="password"
           name="password"
           value={userData.password}
           onChange={(e) => handleGetInputs(e)}
         />
 
-        <button
-          className="entrar"
-          type="submit"
-          onClick={() => navigate("/dashboard")}
-        >
+        <button className="entrar" type="submit">
           Entrar
         </button>
         <button className="cadastrar" onClick={() => navigate("/register")}>
@@ -63,5 +68,5 @@ export const Login = () => {
         </button>
       </form>
     </>
-  )
-}
+  );
+};

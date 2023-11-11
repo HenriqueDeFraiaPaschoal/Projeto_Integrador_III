@@ -25,5 +25,3 @@ model Post {
   User      User     @relation(fields: [userId], references: [id])
   Parent    Post?    @relation("PostToParent", fields: [parentId], references: [id])
 }
-
- 
