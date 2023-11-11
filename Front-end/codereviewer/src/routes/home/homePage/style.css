@@ -1,11 +1,19 @@
 .home-content {
-  width: 100vw;
-  margin-top: 5rem;
+  width: 100%;
+  margin-top: 6rem;
   position: relative;
   /* padding: 0 10%; */
 }
 
-/* .comment-box {
+.show-more {
+  color: var(--purple);
+  cursor: pointer;
+  padding: 0 0.2rem;
+  text-align: right;
+  font-size: 1.8rem;
+}
+
+.comment-box {
   opacity: 0;
   max-height: 0;
   overflow: hidden;
@@ -16,4 +24,4 @@
   opacity: 1;
   max-height: 1000px;
   overflow: visible;
-} */
+}

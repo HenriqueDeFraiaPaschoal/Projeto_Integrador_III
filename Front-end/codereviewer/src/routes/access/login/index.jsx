@@ -6,7 +6,7 @@ import { URL_BASE } from "constants";
 
 export const Login = () => {
   const [userData, setUserData] = React.useState({
-    email: "",
+    user: "",
     password: "",
   });
 
@@ -46,7 +46,7 @@ export const Login = () => {
           id="user"
           name="user"
           placeholder="Insira seu email"
-          value={userData.email}
+          value={userData.user}
           onChange={(e) => handleGetInputs(e)}
         />
 
