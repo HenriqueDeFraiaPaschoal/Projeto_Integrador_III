@@ -29,6 +29,7 @@
 }
 
 .comment-button {
+  cursor: pointer;
   border-radius: 0.58419rem 0rem;
   border: 2px solid var(--Verde, #00eb8e);
   padding: 0.25rem 0.5rem;
@@ -39,4 +40,9 @@
 .comment-button.hide {
   opacity: 0;
   pointer-events: none;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: flex-end;
 }
