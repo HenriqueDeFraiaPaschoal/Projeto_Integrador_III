@@ -4,13 +4,13 @@ import controller from '../controllers/user.js';
 const router = Router();
 
 // Rota para criar um usuário
-router.post('/users', controller.create);
+router.post('/users', controller.create); // FUNCIONANDO
 
 // Rota para buscar todos os usuários
-router.get('/users', controller.findAll);
+router.get('/users', controller.findAll); // FUNCIONANDO
 
 // Rota para buscar apenas um usuário específico
-router.get('/:id', controller.findOne);
+router.get('/users/:id', controller.findOne); // FUNCIONANDO
 
 // Rota para atualizar informações do perfil de um usuário específico
 router.put('/:id', controller.update);
