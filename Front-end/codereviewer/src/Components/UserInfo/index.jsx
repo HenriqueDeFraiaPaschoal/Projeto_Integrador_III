@@ -7,7 +7,7 @@ import "./style.css"
 
 export const UserInfo = () => {
   return (
-    <>
+    <div className="main-container">
       <div className="user-container-profile">
         <p>Usuário123</p>
         <IconProfile />
@@ -21,6 +21,6 @@ export const UserInfo = () => {
           <Medalha04 />
         </div>
       </div>
-    </>
+    </div>
   )
 }
