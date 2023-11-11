@@ -10,23 +10,23 @@
 }
 
 .home-cabecalho {
+  background-color: white;
   display: flex;
   justify-content: space-between;
   position: fixed;
   width: 100vw;
   border: 1px solid red;
+  z-index: 2;
 }
 
-/* .home-logout {
-  position: fixed;
-  top: 2.4rem;
-  right: 1.4rem;
+.home-logout {
+  margin-right: 1rem;
   color: var(--purple);
-  font-size: 0.65rem;
+  font-size: 0.7rem;
   letter-spacing: -0.00313rem;
 }
 
-.home-menu-container {
+/*.home-menu-container {
   width: fit-content;
   position: fixed;
   left: 1.4rem;
