@@ -8,14 +8,18 @@ export const Home = () => {
   const navigate = useNavigate()
 
   return (
-    <main className="home-container">
-      <button className="home-logout" onClick={() => navigate("/")}>
-        SAIR
-      </button>
-      <div className="home-menu-container">
-        <MenuHamburguer />
+    <>
+      <div className="home-cabecalho">
+        <div className="home-menu-container">
+          <MenuHamburguer />
+        </div>
+        <button className="home-logout" onClick={() => navigate("/")}>
+          SAIR
+        </button>
       </div>
-      <Outlet/>
-    </main>
+      <main className="home-container">
+        <Outlet />
+      </main>
+    </>
   )
 }

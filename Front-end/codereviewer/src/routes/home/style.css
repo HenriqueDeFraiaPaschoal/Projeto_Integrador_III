@@ -1,15 +1,23 @@
 .home-container {
-  width: 100%;
-  min-height: 100;
+  /* width: 100%; */
+  /* min-height: 100; */
   display: flex;
-  align-items: center;
+  /* align-items: center; */
+  /* justify-content: center; */
   padding: 0 10%;
-  justify-content: center;
-  flex-direction: column;
-  gap: 50px;
+  /* flex-direction: column; */
+  /* gap: 50px; */
 }
 
-.home-logout {
+.home-cabecalho {
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  width: 100vw;
+  border: 1px solid red;
+}
+
+/* .home-logout {
   position: fixed;
   top: 2.4rem;
   right: 1.4rem;
@@ -29,5 +37,6 @@
   width: 100%;
   margin-top: 6rem;
   position: relative;
+} */
+
   /* padding: 0 10%; */
-}
