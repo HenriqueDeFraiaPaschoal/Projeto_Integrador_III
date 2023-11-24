@@ -5,6 +5,12 @@ const controller = {};
 controller.create = async function(req, res) {
   try {
     console.log(req.body)
+    const result = await prisma.users.findMany({
+      orderBy: [
+        { username: 'asc' },  // Ordem ascendente
+      ]
+    })
+    console.log(result)
     if (req.body.username != '') {
       await prisma.users.create({data: req.body})
       res.status(201).end()
