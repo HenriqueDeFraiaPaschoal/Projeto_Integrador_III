@@ -4,8 +4,11 @@ const controller = {};
 
 controller.create = async function(req, res) {
   try {
-    await prisma.users.create({data: req.body})
-    res.status(201).end()
+    console.log(req.body)
+    if (req.body.username != '') {
+      await prisma.users.create({data: req.body})
+      res.status(201).end()
+    }
   }
   catch(error) {
     console.error(error)
