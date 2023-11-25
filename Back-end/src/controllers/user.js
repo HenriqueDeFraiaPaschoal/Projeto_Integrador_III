@@ -11,12 +11,12 @@ controller.create = async function(req, res) {
       ]
     })
     for (let usr of result) {
-      if (usr.username == req.body.username) {
+      if (usr.username == req.body.username || usr.email == req.body.email) {
         hasUser = true
       }
     }
     console.log(result)
-    if (req.body.username != '' && !hasUser) {
+    if (req.body.email != '' && req.body.email != '' && req.body.senha != '' && !hasUser) {
       await prisma.users.create({data: req.body})
       res.status(201).end()
     }
@@ -44,6 +44,17 @@ controller.findAll = async function(req, res) {
 
 controller.findOne = async function(req, res) {
   try {
+    // const allowed = false
+    // const results = await prisma.users.findMany({
+    //   orderBy: [
+    //     { username: 'asc' },  // Ordem ascendente
+    //   ]
+    // })
+    // for (let usr of results) {
+    //   if (usr.username == req.body.username || usr.email == req.body.email ) {
+    //     hasUser = true
+    //   }
+    // }
     const result = await prisma.users.findUnique({
       where: { id: req.params.id }
     })
