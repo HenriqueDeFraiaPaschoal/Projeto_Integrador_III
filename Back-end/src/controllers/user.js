@@ -16,7 +16,7 @@ controller.create = async function(req, res) {
       }
     }
     console.log(result)
-    if (req.body.email != '' && req.body.email != '' && req.body.senha != '' && !hasUser) {
+    if (req.body.email != '' && req.body.username != '' && req.body.senha != '' && !hasUser) {
       await prisma.users.create({data: req.body})
       res.status(201).end()
     }
@@ -44,6 +44,7 @@ controller.findAll = async function(req, res) {
 
 controller.findOne = async function(req, res) {
   try {
+    // console.log(req.user)
     // const allowed = false
     // const results = await prisma.users.findMany({
     //   orderBy: [
