@@ -1,36 +1,72 @@
-import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
-import axios from "axios";
-import { URL_BASE } from "constants";
+import React, { useState } from "react"
+import { useNavigate } from "react-router-dom"
+import axios from "axios"
+import { URL_BASE } from "constants"
 
 export const Register = () => {
-  const navigate = useNavigate();
+  const navigate = useNavigate()
 
   const [registerData, setRegisterData] = useState({
     username: "",
     email: "",
-    senha: "", // De acordo com o nome no modelo Prisma
-  });
+    senha: "",
+  })
 
   const handleRegister = async (e) => {
-    e.preventDefault();
+    e.preventDefault()
 
     try {
-      const response = await axios.post(`${URL_BASE}/users`, registerData);
+      const response = await axios.post(`${URL_BASE}/users`, registerData)
 
-      console.log("FOI!"); // Lidar com a resposta do backend, se necessário
-
-      navigate("/");
+      navigate("/")
+      alert(
+        "Usuário cadastrado com sucesso! Efetue o login para acessar sua conta."
+      )
     } catch (error) {
-      console.error("Erro ao cadastrar usuário:", error);
+      console.error("Erro ao cadastrar usuário:", error)
+
+      if (
+        error.response &&
+        error.response.status === 400 &&
+        error.response.data
+      ) {
+        const errorMessage = error.response.data.message
+
+        if (errorMessage.toLowerCase().includes("existente")) {
+          alert("Usuário ou e-mail já existente. Escolha outros.")
+        } else {
+          alert(`Erro no cadastro: ${errorMessage}`)
+        }
+      } else if (error.response) {
+        alert("Erro interno do servidor. Tente novamente mais tarde.")
+      } else if (error.request) {
+        alert("Erro na requisição. Verifique sua conexão com a internet.")
+      } else {
+        alert("Erro desconhecido. Tente novamente mais tarde.")
+      }
     }
-  };
+  }
+
+  const validateInputs = () => {
+    if (!registerData.username || !registerData.email || !registerData.senha) {
+      alert("Preencha todos os campos")
+      return false
+    }
+    return true
+  }
 
   return (
     <>
       <h1 className="titulo">Bem-Vindo</h1>
 
-      <form onSubmit={(e) => handleRegister(e)}>
+      <form
+        onSubmit={(e) => {
+          e.preventDefault()
+          if (validateInputs()) {
+            handleRegister(e)
+          }
+        }}
+      >
         <input
           className="input"
           type="text"
@@ -68,5 +104,5 @@ export const Register = () => {
         </button>
       </form>
     </>
-  );
-};
+  )
+}
