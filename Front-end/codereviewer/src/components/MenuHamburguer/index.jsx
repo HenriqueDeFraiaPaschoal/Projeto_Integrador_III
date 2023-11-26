@@ -3,10 +3,16 @@ import { IconMenu } from "assets/icons/IconMenu"
 import { IconProfile } from "assets/icons/IconProfile"
 import { IconPublish } from "assets/icons/IconPublish"
 import { IconHome } from "assets/icons/IconHome"
+import { Modal } from "components/Modal" // Importe seu componente Modal aqui
 import "./style.css"
 
 export const MenuHamburguer = ({ isProfilePage = false }) => {
   const [isOpen, setIsOpen] = useState(false)
+  const [showPublishModal, setShowPublishModal] = useState(false)
+
+  const handlePublishClick = () => {
+    setShowPublishModal(true)
+  }
 
   return (
     <div
@@ -18,10 +24,12 @@ export const MenuHamburguer = ({ isProfilePage = false }) => {
         {isOpen && (
           <>
             {isProfilePage ? <IconHome /> : <IconProfile />}
-            <IconPublish />
+            <IconPublish onClick={handlePublishClick} />
           </>
         )}
       </div>
+
+      {showPublishModal && <Modal onClose={() => setShowPublishModal(false)} />}
     </div>
   )
 }
