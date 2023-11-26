@@ -4,28 +4,72 @@ const controller = {};
 
 controller.create = async function(req, res) {
   try {
-    const hasUser = false
+    let hasUser = false;
     const result = await prisma.users.findMany({
       orderBy: [
-        { username: 'asc' },  // Ordem ascendente
+        { username: 'asc' },
       ]
-    })
+    });
+
     for (let usr of result) {
-      if (usr.username == req.body.username || usr.email == req.body.email) {
-        hasUser = true
+      if (usr.username === req.body.username || usr.email === req.body.email) {
+        hasUser = true;
+        break;
       }
     }
-    console.log(result)
-    if (req.body.email != '' && req.body.username != '' && req.body.senha != '' && !hasUser) {
-      await prisma.users.create({data: req.body})
-      res.status(201).end()
+
+    if (req.body.email && req.body.username && req.body.senha && !hasUser) {
+      await prisma.users.create({ data: req.body });
+      res.status(201).end();
+    } else {
+      if (hasUser) {
+        res.status(400).send({ message: "Usuário ou e-mail já existente" });
+      } else {
+        res.status(400).send({ message: "Campos inválidos" });
+      }
     }
+  } catch (error) {
+    console.error(error);
+    res.status(500).send(error);
   }
-  catch(error) {
-    console.error(error)
-    res.status(500).send(error)
+};
+
+controller.login = async function (req, res) {
+  try {
+    const { user, password } = req.body;
+    console.log('Received login request:', { user, password });
+
+    // Verificar se as credenciais são válidas
+    if (!user || !password) {
+      console.log('Login failed. Credenciais em branco.');
+      return res
+        .status(400)
+        .send({ message: 'Usuário e senha são obrigatórios.' });
+    }
+
+    const result = await prisma.users.findFirst({
+      where: {
+        OR: [
+          { username: user },
+          { email: user },
+        ],
+      },
+    });
+
+    if (result && result.senha === password) {
+      console.log('Login successful:', result);
+      res.status(200).json(result);
+    } else {
+      console.log('Login failed. Invalid credentials.');
+      res
+        .status(401)
+        .send({ message: 'Credenciais inválidas ou usuário não encontrado.' });
+    }
+  } catch (error) {
+    console.error('Error during login:', error);
+    res.status(500).send({ message: 'Erro ao realizar o login' });
   }
-}
+};
 
 controller.findAll = async function(req, res) {
   try {
