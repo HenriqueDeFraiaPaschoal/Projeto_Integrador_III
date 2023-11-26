@@ -6,6 +6,9 @@ const router = Router();
 // Rota para criar um usuário
 router.post('/users', controller.create); // FUNCIONANDO
 
+// Rota para realizar o login
+router.post('/login', controller.login);
+
 // Rota para buscar todos os usuários
 router.get('/users', controller.findAll); // FUNCIONANDO
 
