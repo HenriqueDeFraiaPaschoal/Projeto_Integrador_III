@@ -1,4 +1,4 @@
-export const IconPublish = () => {
+export const IconPublish = ({ onClick }) => {
   return (
     <svg
       width="46"
@@ -6,6 +6,7 @@ export const IconPublish = () => {
       viewBox="0 0 46 46"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
+      onClick={onClick}
     >
       <g filter="url(#filter0_d_53_308)">
         <rect

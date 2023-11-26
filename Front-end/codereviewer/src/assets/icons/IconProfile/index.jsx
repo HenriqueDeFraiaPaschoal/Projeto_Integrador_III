@@ -1,4 +1,4 @@
-export const IconProfile = () => {
+export const IconProfile = ({ onClick }) => {
   return (
     <svg
       width="46"
@@ -6,6 +6,7 @@ export const IconProfile = () => {
       viewBox="0 0 46 46"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
+      onClick={onClick}
     >
       <path
         d="M33.3894 38.74V29.9819C33.3894 26.1989 30.3227 23.1321 26.5396 23.1321H18.6011C14.818 23.1321 11.7512 26.1989 11.7512 29.9819V38.74"
