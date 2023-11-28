@@ -1,7 +1,7 @@
 .modal-overlay {
   position: fixed;
-  top: 0;
-  left: 0;
+  /* top: 0; */
+  /* left: 0; */
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.5);
@@ -11,20 +11,73 @@
 }
 
 .modal {
-  background: white;
-  padding: 20px;
-  border-radius: 8px;
-  width: 300px;
+  background: #ffffff;
+  padding: 1.3rem;
+  border-radius: 0.5rem;
+  width: 70%;
+  height: 45%;
+}
+
+.info-post {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.info-post p {
+  color: var(--purple);
+  font-size: 1rem;
+  letter-spacing: -0.1rem;
 }
 
 .modal-close-button {
-  background: #ddd;
-  padding: 8px;
   border: none;
-  border-radius: 4px;
   cursor: pointer;
+  font-size: 1.3rem;
+  color: var(--purple);
 }
 
-.modal-content {
-  margin-top: 16px;
+.post-content-modal {
+  margin-top: 1rem;
+  width: 100%;
+  height: 89%;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.post-content-modal textarea {
+  max-width: 100%;
+  max-height: 100%;
+  flex: 1;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  background: var(--Branco, #fff);
+  box-shadow: 0px 0px 2.33672px 1.16836px rgba(139, 118, 214, 0.5);
+  resize: none;
+}
+
+.post-content-modal textarea::placeholder {
+  color: rgba(139, 118, 214, 0.5);
+  font-size: 0.63894rem;
+}
+
+.btn-post-container {
+  display: flex;
+  justify-content: right;
+}
+
+.btn-post {
+  color: var(--green);
+  padding: 0.4rem;
+  margin-top: 0.5rem;
+  border-radius: 0.58419rem 0rem;
+  border: 1px solid var(--purple);
+  /* box-shadow: 0px 0px 2.33672px 1.16836px rgba(0, 0, 0, 0.25); */
+}
+
+.btn-post:active {
+  background-color: var(--green);
+  color: #ffffff;
+  border: 1px solid var(--green);
 }
