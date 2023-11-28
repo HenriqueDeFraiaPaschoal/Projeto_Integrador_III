@@ -3,7 +3,7 @@ import { IconMenu } from "assets/icons/IconMenu"
 import { IconProfile } from "assets/icons/IconProfile"
 import { IconPublish } from "assets/icons/IconPublish"
 import { IconHome } from "assets/icons/IconHome"
-import { Modal } from "components/Modal" // Importe seu componente Modal aqui
+import { Modal } from "components/Modal"
 import "./style.css"
 
 export const MenuHamburguer = ({ isProfilePage = false }) => {

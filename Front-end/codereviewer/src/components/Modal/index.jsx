@@ -10,7 +10,7 @@ export const Modal = ({ onClose, ...props }) => {
     // Se o usuário escolher "OK", continua com a ação de publicar
     if (shouldPublish) {
       console.log("Publicando o código...");
-      // Adicione aqui a lógica para publicar o código
+      // lógica da publicação
     }
   };
 
@@ -32,7 +32,6 @@ export const Modal = ({ onClose, ...props }) => {
             placeholder="Escreva..."
           ></textarea>
           <div className="btn-post-container">
-            {/* Use handlePublish como o novo manipulador de clique */}
             <button className="btn-post" onClick={handlePublish}>
               Publicar
             </button>
