@@ -57,8 +57,13 @@ controller.login = async function (req, res) {
     });
 
     if (result && result.senha === password) {
+      // Retorna o ID e o nome do usuário junto com a resposta
+      const userId = user.id;
+      const username = user.username;
       console.log('Login successful:', result);
+      console.log(userId, username);
       res.status(200).json(result);
+
     } else {
       console.log('Login failed. Invalid credentials.');
       res
