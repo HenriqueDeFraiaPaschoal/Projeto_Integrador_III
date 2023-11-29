@@ -6,10 +6,9 @@ import "./style.css"
 
 export const User = () => {
   return (
-    <div className="user-info-container">
-      <div>
+    <div className="user-info-stats">
+      <div className="user-info-container">
         <UserInfo />
-        {/* <InputComment /> */}
       </div>
       <div className="home-content">
         {userPosts &&
