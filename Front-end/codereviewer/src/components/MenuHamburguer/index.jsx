@@ -4,9 +4,12 @@ import { IconProfile } from "assets/icons/IconProfile"
 import { IconPublish } from "assets/icons/IconPublish"
 import { IconHome } from "assets/icons/IconHome"
 import { Modal } from "components/Modal"
+import { useNavigate } from "react-router-dom"
 import "./style.css"
 
 export const MenuHamburguer = ({ isProfilePage = false }) => {
+  const navigate = useNavigate()
+
   const [isOpen, setIsOpen] = useState(false)
   const [showPublishModal, setShowPublishModal] = useState(false)
 
@@ -23,7 +26,7 @@ export const MenuHamburguer = ({ isProfilePage = false }) => {
       <div className="icon-container">
         {isOpen && (
           <>
-            {isProfilePage ? <IconHome /> : <IconProfile />}
+            {isProfilePage ? <IconHome /> : <IconProfile onClick={() => navigate("/dashboard/user")}/>}
             <IconPublish onClick={handlePublishClick} />
           </>
         )}
