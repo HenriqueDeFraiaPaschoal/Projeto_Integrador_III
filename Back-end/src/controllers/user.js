@@ -20,7 +20,7 @@ controller.create = async function(req, res) {
 
     if (req.body.email && req.body.username && req.body.senha && !hasUser) {
       await prisma.users.create({ data: req.body });
-      res.status(201).end();
+      res.status(201).send({username: req.body.username});
     } else {
       if (hasUser) {
         res.status(400).send({ message: "Usuário ou e-mail já existente" });
