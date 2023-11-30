@@ -46,3 +46,9 @@
   display: flex;
   justify-content: flex-end;
 }
+
+.btn-container-empty {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}

@@ -13,9 +13,12 @@ export const UserPost = ({ user, ask, answer, comments }) => {
     <>
       <UsersBar user={user} />
       <PostBox body={answer} title={ask} />
-      <p className="show-more" onClick={toggleComments}>
-        ...
-      </p>
+      {comments && (
+        <p className="show-more" onClick={toggleComments}>
+          ...
+        </p>
+      )}
+
       <div className={`box ${showComments ? "open" : ""}`}>
         <div className="comment-container">
           {comments &&
@@ -26,6 +29,11 @@ export const UserPost = ({ user, ask, answer, comments }) => {
       </div>
       {showComments && (
         <div className="btn-container">
+          <button className="comment-button">Comentar</button>
+        </div>
+      )}
+      {!showComments && (
+        <div className="btn-container-empty">
           <button className="comment-button">Comentar</button>
         </div>
       )}
