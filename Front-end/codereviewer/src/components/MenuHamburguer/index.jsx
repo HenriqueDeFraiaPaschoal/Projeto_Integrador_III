@@ -26,7 +26,11 @@ export const MenuHamburguer = ({ isProfilePage = false }) => {
       <div className="icon-container">
         {isOpen && (
           <>
-            {isProfilePage ? <IconHome /> : <IconProfile onClick={() => navigate("/dashboard/user")}/>}
+            {isProfilePage ? (
+              <IconHome />
+            ) : (
+              <IconProfile onClick={() => navigate("/dashboard/user")} />
+            )}
             <IconPublish onClick={handlePublishClick} />
           </>
         )}
