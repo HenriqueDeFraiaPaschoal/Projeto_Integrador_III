@@ -17,40 +17,44 @@ export const Login = () => {
     setUserData({ ...userData, [name]: value });
   };
 
-  const handleLogin = async (e) => {
-    e.preventDefault();
+  const handleLogin = React.useCallback(
+    async (e) => {
+      e.preventDefault();
 
-    // Verificar campos em branco
-    if (!userData.user || !userData.password) {
-      alert("Preencha todos os campos.");
-      return;
-    }
-
-    try {
-      const response = await axios.post(`${URL_BASE}/login`, userData);
-
-      // Se o login for bem-sucedido, redirecione para a rota "/dashboard"
-      if (response.data) {
-        navigate("/dashboard");
-      } else {
-        // Lidar com o caso de login falhado
-        alert("Usuário ou senha incorretos. Tente novamente.");
-      }
-    } catch (error) {
-      console.error(error);
-
-      if (error.response && error.response.status === 401) {
-        // Lidar com o erro específico de credenciais inválidas
-        alert("Usuário ou senha incorretos. Tente novamente.");
-      } else if (error.response && error.response.status === 400) {
-        // Lidar com o erro específico de campos em branco
+      // Verificar campos em branco
+      if (!userData.user || !userData.password) {
         alert("Preencha todos os campos.");
-      } else {
-        // Lidar com outros erros
-        alert("Erro ao realizar o login. Tente novamente mais tarde.");
+        return;
       }
-    }
-  };
+
+      try {
+        const response = await axios.post(`${URL_BASE}/login`, userData);
+        const data = await response.data;
+        localStorage.setItem("USER_ID", data.id);
+        localStorage.setItem("USER_NAME", data.username);
+
+        // Se o login for bem-sucedido, redirecione para a rota "/dashboard" --> aqui já é success, não precisa validar status.200
+        navigate("/dashboard");
+
+        // Lidar com o caso de login falhado
+      } catch (error) {
+        // console.error(error); não mostre o erro para o usuário, trate-o
+        
+        if (error.response && error.response.status === 401) {
+          // Lidar com o erro específico de credenciais inválidas
+          alert("Usuário ou senha incorretos. Tente novamente.");
+        }
+        if (error.response && error.response.status === 400) {
+          // Lidar com o erro específico de campos em branco
+          alert("Preencha todos os campos.");
+        } else {
+          // Lidar com outros erros
+          alert("Erro ao realizar o login. Tente novamente mais tarde.");
+        }
+      }
+    },
+    [navigate, userData]
+  );
 
   return (
     <>
